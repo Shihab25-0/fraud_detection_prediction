@@ -1,106 +1,126 @@
-# fraud_detection_prediction
-A machine learning project for fraud detection in financial transactions using Python and Streamlit.
+# 🚨 Fraud Detection Prediction
 
-# 🚀 Fraud Detection System
-
-A **Machine Learning based Fraud Detection System** that predicts whether a financial transaction is **Fraud** or **Not Fraud**.  
-This project is implemented using **Python, Scikit-learn, Pandas, NumPy, and Streamlit** for a user-friendly web interface.  
-
----
-
-## 📖 Overview
-Fraudulent financial transactions are a major challenge in the banking sector.  
-This project builds a **classification model** that detects fraudulent transactions based on transaction details like amount, balance, and type.  
-Finally, a **Streamlit app** is developed to allow real-time prediction.
-
----
-
-## ⚙️ Features
-- 🧠 Machine Learning pipeline with preprocessing and Logistic Regression.
-- 📊 Handles categorical & numerical transaction features.  
-- 🌐 Interactive **Streamlit Web App** for easy usage.  
-- ✅ Predicts transactions as **Fraud** or **Not Fraud** instantly.  
-- 🔍 Demo inputs for testing the model.  
+A machine learning project that predicts whether a financial transaction is **Fraud** or **Not Fraud**, implemented using **Python, Scikit-learn, Pandas, NumPy** and deployed as a **Streamlit web app**.
 
 ---
 
 ## 📂 Project Structure
 
-Navigate into the project:
+fraud_detection_prediction/
+├── fraud_detection_pipeline_updated.pkl
+├── fraud_detection.py
+├── analysis_model.ipynb
+├── data.txt
+├── README.md
+└── requirements.txt
 
-cd fraud-detection
+yaml
+Copy code
 
+- `fraud_detection_pipeline_updated.pkl`: Trained ML pipeline  
+- `fraud_detection.py`: Streamlit app code  
+- `analysis_model.ipynb`: Notebook with EDA, model training, experiments  
+- `data.txt`: Dataset info or small sample (if included)  
+- `requirements.txt`: Python dependencies  
+- `README.md`: Project documentation  
 
-Install dependencies:
+---
 
+## 🧠 Project Description
+
+This project tackles the problem of **fraud detection in financial transactions**.  
+Given transaction details like type, amount, and balances, the model classifies a transaction as either **Fraud (1)** or **Not Fraud (0)**.  
+A user-friendly Streamlit interface allows anyone to enter transaction details and get predictions in real time.
+
+---
+
+## 🚀 Features & Innovation
+
+- End-to-end **ML pipeline**: preprocessing + classification  
+- Uses **Logistic Regression** with class balancing  
+- Handles numeric and categorical inputs  
+- **Streamlit Web App** for interactive user predictions  
+- Can be expanded in the future (other models, dashboards)  
+
+---
+
+## 📊 Model Performance & Metrics
+
+Use the notebook `analysis_model.ipynb` to view detailed metrics:  
+- Accuracy  
+- Precision, Recall, F1-score  
+- Confusion Matrix  
+
+---
+
+## 🎯 Demo Input Examples
+
+### ✅ Not Fraud
+**Type:** PAYMENT  
+**Amount:** 2000  
+**OldBalance Sender:** 5000  
+**NewBalance Sender:** 3000  
+**OldBalance Receiver:** 1000  
+**NewBalance Receiver:** 3000  
+
+### 🚨 Fraud
+**Type:** TRANSFER  
+**Amount:** 8000  
+**OldBalance Sender:** 5000  
+**NewBalance Sender:** 0  
+**OldBalance Receiver:** 2000  
+**NewBalance Receiver:** 2000  
+
+Use these to test your inputs when running the app.
+
+---
+
+## 🛠 Installation & Usage
+
+1. Clone repository  
+   ```bash
+   git clone https://github.com/Shihab25-0/fraud_detection_prediction.git
+Change directory
+
+bash
+Copy code
+cd fraud_detection_prediction
+Install dependencies
+
+bash
+Copy code
 pip install -r requirements.txt
+Run the Streamlit app
 
-
-Run the Streamlit app:
-
+bash
+Copy code
 streamlit run fraud_detection.py
+📦 Dataset Info
+The full dataset is too large to be uploaded directly on GitHub.
+You can download the dataset from Kaggle:
 
-🧪 Demo Inputs
-✅ Not Fraud Example
+👉 Fraud Detection Dataset on Kaggle
 
-Transaction Type: Payment
+After downloading, place the dataset file inside the project folder before running the notebook or training the model.
 
-Amount: 2000
+🌍 Social Impact & Usefulness
+Helps banks, fintechs, payment apps detect and prevent fraudulent transactions
 
-Old Balance (Sender): 5000
+Protects users from financial loss
 
-New Balance (Sender): 3000
+Contributes to safer digital transactions in socio-economic context
 
-Old Balance (Receiver): 1000
+🧩 Future Enhancements
+Integrate other models (RandomForest, XGBoost, Neural Networks)
 
-New Balance (Receiver): 3000
+Add transaction history dashboard for bankers/admin
 
-🚨 Fraud Example
+Deploy in cloud / production environment
 
-Transaction Type: Transfer
+Enhance with behavioral & temporal features
 
-Amount: 8000
+⚖️ License
+This project is licensed under the MIT License. Feel free to use, modify, and distribute.
 
-Old Balance (Sender): 5000
-
-New Balance (Sender): 0
-
-Old Balance (Receiver): 2000
-
-New Balance (Receiver): 2000
-
-📊 Model Performance
-
-Accuracy: ~95% (depends on dataset split)
-
-Evaluation Metrics: Precision, Recall, F1-score, Confusion Matrix
-
-🌍 Social Impact
-
-Helps financial institutions detect fraud.
-
-Saves customers from monetary loss.
-
-Contributes to safer and trustworthy digital transactions.
-
-👨‍💻 Technologies Used
-
-Python 🐍
-
-Pandas, NumPy
-
-Scikit-learn
-
-Streamlit
-
-Matplotlib, Seaborn
-
-📜 License
-
-This project is licensed under the MIT License – feel free to use and modify.
-
-✨ Author
-
-Rahan Shihab
-Fresher Frontend Developer & Machine Learning Enthusiast
-
+✍ Author
+Shihab25-0
