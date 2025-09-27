@@ -26,3 +26,81 @@ Finally, a **Streamlit app** is developed to allow real-time prediction.
 
 ## 📂 Project Structure
 
+Navigate into the project:
+
+cd fraud-detection
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+Run the Streamlit app:
+
+streamlit run fraud_detection.py
+
+🧪 Demo Inputs
+✅ Not Fraud Example
+
+Transaction Type: Payment
+
+Amount: 2000
+
+Old Balance (Sender): 5000
+
+New Balance (Sender): 3000
+
+Old Balance (Receiver): 1000
+
+New Balance (Receiver): 3000
+
+🚨 Fraud Example
+
+Transaction Type: Transfer
+
+Amount: 8000
+
+Old Balance (Sender): 5000
+
+New Balance (Sender): 0
+
+Old Balance (Receiver): 2000
+
+New Balance (Receiver): 2000
+
+📊 Model Performance
+
+Accuracy: ~95% (depends on dataset split)
+
+Evaluation Metrics: Precision, Recall, F1-score, Confusion Matrix
+
+🌍 Social Impact
+
+Helps financial institutions detect fraud.
+
+Saves customers from monetary loss.
+
+Contributes to safer and trustworthy digital transactions.
+
+👨‍💻 Technologies Used
+
+Python 🐍
+
+Pandas, NumPy
+
+Scikit-learn
+
+Streamlit
+
+Matplotlib, Seaborn
+
+📜 License
+
+This project is licensed under the MIT License – feel free to use and modify.
+
+✨ Author
+
+Rahan Shihab
+Fresher Frontend Developer & Machine Learning Enthusiast
+
